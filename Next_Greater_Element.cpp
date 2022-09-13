@@ -20,7 +20,7 @@ since it doesn't exist, it is -1.
 Main Approach for this program is as follows :
 ---> Start the Travarsal from the end because we know that stack is last in first out. FOR( i = n - 1 to 0 )
 
----> Then Check that Our Stack is Empty or not. If Not empty, Check that if Stack top is greater than that number??
+---> Then Check that Our Stack is Empty or not. If Not empty, Check that if Stack top is <= that number??
 
     -->> If yes then POP the stack untill stack top becomes less than that element or stack becomes empty.
 ---> Then if Stack becomes empty, push -1 in result vector. ELSE push stack.top();
