@@ -28,12 +28,12 @@ $$$ A index is a Celebrity if :
 
 3. Start a Loop with condition a < b --> because every diagonal element is 0; 
    So when we reached a diagonal point then all the elements have been checked
-   Because we started the travarsal from start and end.
+   Because we started the travarsal from start and end ( from 0[a] and n-1[b] ) .
    So We will meet up in the middle point. Diagonal point is the middle point.
    
-4. If 0 found in M[a][b] position i.e. 1st row last column position;
+4. If 0 found in M[a][b] position i.e. 1st row last column position --> [a = 0 and b = n-1 initially];
    --> Then decrement b by 1 i.e. b--; 
-       ----->>>>> !! Because here our Motive is To Find an element Who knows Someone. !!
+       ----->>>>> !! Because here our Motive is To Find an element Who knows Someone.[ i.e. to find an element whole value is 1 ] !!
        
     i.e.      <--(b)
          0  0  1  0 
@@ -43,7 +43,7 @@ $$$ A index is a Celebrity if :
          
    --> ELSE 1 found in any M[a][b] position it means that element knows that column index, so Start checking next row i.e.
           next element also knows him or not.
-          ----->>>> !! We Found an element Who Knows Someone. So let's Check if he knows everyone ?? !!
+          ----->>>> !! We Found an element Who Knows Someone. So let's Check if he knows everyone ?? [ i.e. in that column, all row values are 1 ? ] !!
           
    i.e. 1 --> b  |
         1 --> b  |
