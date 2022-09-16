@@ -1,4 +1,4 @@
-/*
+
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 QUESTION : A celebrity is a person who is known to all but does not know anyone at a party.
 If you go to a party of N people, find if there is a celebrity in the party or not.
@@ -20,7 +20,7 @@ Approach to solve this program is as Follows :[FIND AN ELEMENT WHO KNOWS SOMEONE
 
 $$$ A index is a Celebrity if : 
 -->In that row, All column values are zero [i.e. It doesn't knows anyone];
---> In that Column, All row values are Zero except that row = column value (because he himself knows him is absurd); 
+--> In that Column, All row values are 1 except that row = column value (because he himself knows him is absurd); 
     [i.e. Everyone knows him]
 
 1. Take a variable (A) and initialize it with starting Row index i.e. 0; It will be used to check Row-wise
@@ -51,7 +51,7 @@ $$$ A index is a Celebrity if :
         0 -->Suppose Diagonal element
    
 
-*/
+
 class Solution 
 {
     public:
