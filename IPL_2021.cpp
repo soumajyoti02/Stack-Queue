@@ -37,7 +37,7 @@ Explanation:
 Simple Approach for this program is as follows :
 
 This Could be implemented with the help of a deque.
-While Shifting the window, We just push the rear element's index at the rare of deQue.
+While Shifting the window, We just push the rear element's' index at the rare of deQue.
 Every time while entering a new element, we have to check that where the front element is out of bound of our present size.
 If so then pop the deQue front.
 
